@@ -12,7 +12,7 @@ describe('application logic', () => {
       const entries = List.of('Trainspotting', '28 days later');
       const nextState = setEntries(state, entries);
       expect(nextState).to.equal(Map({
-        entries: List.of('Trainspotting', '28 days later');
+        entries: List.of('Trainspotting', '28 days later')
       }));
     });
 
@@ -42,7 +42,7 @@ describe('application logic', () => {
         vote: Map({
           pair: List.of('Trainspotting', '28 days later')
         }),
-        entries: List();
+        entries: List()
       });
       const nextState = vote(state, 'Trainspotting');
       expect(nextState).to.equal(Map({
