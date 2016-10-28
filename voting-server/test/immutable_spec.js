@@ -1,4 +1,4 @@
-import {Expect} from 'chai';
+import {expect} from 'chai';
 import {List} from 'immutable';
 
 describe('immutability', () => {
