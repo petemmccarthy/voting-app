@@ -27,7 +27,8 @@
     "presets": [
       "es2015",
       "react"
-    ]
+    ],
+    "plugins": ["react-hot-loader/babel"]
   },
   "dependencies": {
     "immutable": "^3.8.1",
