@@ -90,7 +90,7 @@ describe('Voting', () => {
   });
 
   it('does update DOM when prop changes', () => {
-    const pair = ['Trainspotting', '28 Days Later'];
+    const pair = List.of('Trainspotting', '28 Days Later');
     const container = document.createElement('div');
     let component = ReactDOM.render(
       <Voting pair={pair} />,
@@ -102,7 +102,7 @@ describe('Voting', () => {
 
     const newPair = pair.set(0, 'Sunshine');
     component = ReactDOM.render(
-      <Voting pair={pair} />,
+      <Voting pair={newPair} />,
       container
     );
     firstButton = scryRenderedDOMComponentsWithTag(component, 'button')[0];
