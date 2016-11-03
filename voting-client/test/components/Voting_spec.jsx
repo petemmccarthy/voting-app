@@ -107,7 +107,6 @@ describe('Voting', () => {
     );
     firstButton = scryRenderedDOMComponentsWithTag(component, 'button')[0];
     expect(firstButton.textContent).to.equal('Sunshine');
-
   });
 
 });
