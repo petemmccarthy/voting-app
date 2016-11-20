@@ -68,7 +68,7 @@ describe('reducer', () => {
   });
 
   it('handles VOTE by setin hasVoted', () => {
-    const state = from JS({
+    const state = fromJS({
       vote: {
         pair: ['Trainspotting', '28 Days Later'],
         tally: {Trainspotting: 1}
