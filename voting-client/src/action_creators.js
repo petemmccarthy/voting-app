@@ -12,3 +12,10 @@ export function vote(state) {
     entry
   };
 }
+
+export function next() {
+  return {
+    meta: {remote: true},
+    type: 'NEXT'
+  };
+}
