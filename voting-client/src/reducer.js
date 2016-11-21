@@ -17,7 +17,7 @@ function resetVote(state) {
   const hasVoted = state.get('hasVoted');
   const currentPair = state.getIn(['vote', 'pair'], List());
   if (hasVoted && !currentPair.includes(hasVoted)) {
-    return state.remover('hasVoted');
+    return state.remove('hasVoted');
   } else {
     return state;
   }
